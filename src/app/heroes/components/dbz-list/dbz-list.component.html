@@ -1,0 +1,7 @@
+<ul *ngIf="heros.length>0; else otro" class="list-group ">
+    <li  class="list-group-item d-flex justify-content-between" *ngFor="let hero of heros; let i =index"><span>{{i+1}}.</span> {{hero.name}} - <span>{{hero.power}}</span> <button (click)="delete(hero.id!)" class="btn btn-danger text-white">X</button></li>
+</ul>
+
+<ng-template #otro>
+    <p>There are not characters</p>
+</ng-template>
