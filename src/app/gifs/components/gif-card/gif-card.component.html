@@ -1,0 +1,8 @@
+<mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title> {{details.title || "No title"}} </mat-card-title>
+      
+    </mat-card-header>
+    <img mat-card-image [src]="details.images.downsized_medium.url"  [alt]="details.title">
+  </mat-card>
